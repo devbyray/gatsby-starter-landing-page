@@ -14,7 +14,7 @@ const CallToAction = () => (
       mname="contact"
       method="post"
       netlify
-      action="/"
+      action="/success"
       data-netlify="true"
       data-netlify-honeypot="bot-field"
       data-netlify-recaptcha="true"
