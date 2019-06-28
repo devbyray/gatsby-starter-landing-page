@@ -13,9 +13,11 @@ const CallToAction = () => (
     <form
       mname="contact"
       method="post"
+      netlify
       action="/"
       data-netlify="true"
       data-netlify-honeypot="bot-field"
+      data-netlify-recaptcha="true"
     >
       <div className="field half first">
         <label htmlFor="name">Name</label>
@@ -29,6 +31,7 @@ const CallToAction = () => (
         <label htmlFor="message">Message</label>
         <textarea name="message" id="message" rows="6" />
       </div>
+      <div data-netlify-recaptcha="true"></div>
       <ul className="actions">
         <li>
           <input type="submit" value="Send Message" className="special" />
