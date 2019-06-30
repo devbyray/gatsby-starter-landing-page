@@ -35,7 +35,9 @@ export default class Contact extends Component {
 
   render() {
     return (
-      <div style={{ padding: "4rem 1rem", textAlign: "center" }}>
+      <div
+        style={{ padding: "4rem 1rem", margin: "0 auto", maxWidth: "800px" }}
+      >
         <h1>Contact</h1>
         <form
           name="contact"
@@ -57,21 +59,35 @@ export default class Contact extends Component {
             <label>
               Your name:
               <br />
-              <input type="text" name="name" onChange={this.handleChange} />
+              <input
+                type="text"
+                name="name"
+                onChange={this.handleChange}
+                style={{ width: "100%" }}
+              />
             </label>
           </p>
           <p>
             <label>
               Your email:
               <br />
-              <input type="email" name="email" onChange={this.handleChange} />
+              <input
+                type="email"
+                name="email"
+                onChange={this.handleChange}
+                style={{ width: "100%" }}
+              />
             </label>
           </p>
           <p>
             <label>
               Message:
               <br />
-              <textarea name="message" onChange={this.handleChange} />
+              <textarea
+                name="message"
+                onChange={this.handleChange}
+                style={{ width: "100%" }}
+              />
             </label>
           </p>
           <p>

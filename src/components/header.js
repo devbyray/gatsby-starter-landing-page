@@ -30,7 +30,7 @@ Header.propTypes = {
 }
 
 Header.defaultProps = {
-  siteTitle: ``,
+  siteTitle: `The Modern Frontend Workflow for Junior Developers`,
 }
 
 export default Header

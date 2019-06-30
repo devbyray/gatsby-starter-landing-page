@@ -4,7 +4,7 @@ import PropTypes from "prop-types"
 import Button from "../components/button"
 import headerImage from "../images/header.png"
 import MockupContent from "./image"
-import mockupFrame from "../images/mockup-frame.png"
+import mockupFrame from "../images/screenshot.png"
 
 const Header = ({ siteTitle }) => (
   <div
@@ -26,21 +26,18 @@ const Header = ({ siteTitle }) => (
         opacity: 0.5,
       }}
     />
-    <h1 style={{ textAlign: "center" }}>Landing Page Starter</h1>
-    <p style={{ textAlign: "center", maxWidth: 440 }}>
-      This landing page looks great on all devices and is minimal in design. Add
-      what you want and deploy.
-    </p>
-    <Button>Get Early Access</Button>
-    <div style={{ margin: 60, width: `250px`, position: "relative" }}>
+    <h1 style={{ textAlign: "center" }}>The Modern Frontend Workflow</h1>
+    <h2 style={{ textAlign: "center", maxWidth: 440 }}>
+      <em>for Junior Developers</em>
+    </h2>
+    {/* <Button>Get Early Access</Button> */}
+    <div style={{ margin: "0 60px", width: `800px`, position: "relative" }}>
       <div style={{ clipPath: "inset(2% 5% round 2% 5%)" }}>
-        <MockupContent />
+        {/* <MockupContent /> */}
       </div>
       <div
         style={{
-          position: "absolute",
-          width: "250px",
-          top: 0,
+          width: "800px",
         }}
       >
         <img
@@ -49,6 +46,11 @@ const Header = ({ siteTitle }) => (
         />
       </div>
     </div>
+    <p style={{ textAlign: "center", maxWidth: 440 }}>
+      Have you ever wondered how most of the developers work during their
+      Frontend Development? Or can't you wrap your head around Git, NodeJS, NPM,
+      Webpack and all the other cool tools? Then this course is for you!
+    </p>
   </div>
 )
 
